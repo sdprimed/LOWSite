@@ -1,0 +1,184 @@
+<!DOCTYPE html >
+
+
+<html>
+	<head>
+		<title>Little Oaks Winery</title>
+    
+		<link href="littleOaksWineryStyles.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Philosopher|Bitter|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        
+   		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+	   	<script src="littleOaksWineryScripts.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="jquery.slides.min.js"></script>
+
+		<script>
+		    $(function(){
+		      $("#slides").slidesjs({
+		        width: 730,
+		        height: 350,
+		        navigation: { active: false, effect:"slide"},
+		        play: { active: false, // [boolean] Generate the play and stop buttons.
+			  	auto: true 
+			    },
+			  	pagination: {
+      			active: false, // [boolean] Create pagination items.
+    			}
+
+		      });
+		    });
+		 </script>
+	</head>
+
+	<body id="master" style="background-color: #F0D2B4">
+  
+		<header>
+			<figure class="headerLogo"><img id="companyLogoImg" src="images/logo.png"></figure>
+		</header>
+      
+		<nav class="mainMenu">
+			<ul>
+				<li class="menuHome"><a href="">Home</a></li>
+				<li class="menuHistory"><a href="#">History</a></li>
+				<li class="menuGallery"><a href="#">Gallery</a></li>
+				<li class="menuProducts"><a href="#">Products</a></li>
+				<li class="menuWineClub"><a href="#">Wine Club</a></li>
+				<!--<li class="menuAbout"><a href="#">About</a></li> -->
+				<li class="menuContactUs"><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+    
+        
+		<!-- 
+		-----------------------------------------------------------------------------------------------------------------------------
+        --  Main Section.                                                                                                        --
+		-----------------------------------------------------------------------------------------------------------------------------
+		-->
+        <aside class="sidePanel">
+            
+            <nav class="sidePanelNav">
+				<ul>
+					<li><a href="#">Shop Now!</a></li>
+					<li><a href="#">Join Our Club</a></li>
+				</ul>
+            </nav>
+            
+            <section class="sidePanelLinks">
+				<ul>
+					<li><a href="#">Announcements</a></li>
+					<li><a href="#">News Bulletin</a></li>
+					<li><a href="#">Events</a></li>
+				</ul>
+            </section>
+        </aside>
+        
+		<!-- 
+		-----------------------------------------------------------------------------------------------------------------------------
+        --  Main Section.                                                                                                        --
+		-----------------------------------------------------------------------------------------------------------------------------
+		-->
+        <main class="pageContent">
+        
+        	<section class="contentHome">
+        		<p id="formatSummaryPhilosopher"> 
+					We will be offering Viognier, Malbec, Sangiovese, Syrah, Merlot, Cabernet Sauvignon, Barbera, and red blends in limited quantities. Stay tuned for our 2013 releases!          
+        		</p>
+        		<div id="slides">
+    			    <img src="images/slideShow/Rich&dogs2-730x350.png">
+    				<img src="images/slideShow/Bryan_and_dogs1-750x500.png">
+    				<img src="images/slideShow/Bryan_and_Bella-750x500.png">
+     				<img src="images/slideShow/LOWbarrels-750x500.png">
+     				<img src="images/slideShow/apollo1-750x500.png">
+
+  				</div>
+
+            </section>
+        
+        	<section class="contentHistory" style="display: none;">
+	 			<p id="formatSummaryPhilosopher"> 
+					History: Under Construction
+        		</p>
+            </section>
+        
+        	<section class="contentGallery" style="display: none;">
+	 			<table class="galleryTable">
+                	<tr id="galleryRow">
+                    	<td>"It all started in 1993 when I moved into a house in Palo Alto.  There was a beautiful old apricot tree in the backyard, a remnant of the fruit groves that used to blanket 
+                        	the Santa Clara Valley in the first half of the 20th century." &nbsp&nbsp<i><strong>Rich Sportsman</strong></i></td>
+                    	<td colspan="2"><img id="galleryImgDouble" src="images/photoGallery/galleryImg1.jpg"></td>
+                    	<td rowspan="2" colspan="2"><img id="galleryImgQuad" src="images/photoGallery/galleryImg2.jpg"></td>
+                    </tr>
+                    
+                	<tr id="galleryRow">
+                    	<td rowspan="2" colspan="2"><img id="galleryImgQuad" src="images/photoGallery/galleryImg3.jpg"></td>
+                    	<td>In starting up Little Oaks Winery, we have joined a group of over 100 commercial wineries now operating in the San Diego area.  Historically, San Diego was 
+                        	the first area to produce wine in Alta California. </td>
+                    </tr>
+                    
+                	<tr id="galleryRow">
+                    	<td colspan="2"><img id="galleryImgDouble" src="images/photoGallery/galleryImg4.jpg"></td>
+                    	<td>Starting in 2015, we are releasing our first 2013 vintages, ranging from a pleasant light Viognier to a very sultry Malbec, all made from grapes in the greater San Diego area.</td>
+                    </tr>
+                
+                </table>
+            </section>
+        
+        	<section class="contentProducts" style="display: none;">
+	 			<p id="formatSummaryPhilosopher"> 
+					Products: Under Construction
+        		</p>
+            </section>
+        
+        	<section class="contentWineClub" style="display: none;">
+	 			<p id="formatSummaryPhilosopher"> 
+					Wine Club: Under Construction
+        		</p>
+            </section>
+        
+        	<section class="contentAbout" style="display: none;">
+	 			<p id="formatSummaryPhilosopher"> 
+					About: Under Construction
+        		</p>
+            </section>
+        
+        	<section class="contentContactUs" style="display: none;">
+	        	<div class="wineryAddress">
+			       	<p>	Little Oaks Winery<br>
+    		        	1945 Camino Vida Roble<br>
+        		        Suite I<br>
+            		    CARLSBAD, CA 92008</p>
+				</div>
+            
+    	        <div class="contactInfo">
+        	    	<p>Phone: 760-494-0597<br>
+            	    Email: <a href="mailto:info@littleoakswinery.com">info@littleoakswinery.com</a>
+            	</div>
+            </section>
+        </main>
+
+
+
+        
+		<!-- 
+		-----------------------------------------------------------------------------------------------------------------------------
+        --  Footer Section.                                                                                                        --
+		-----------------------------------------------------------------------------------------------------------------------------
+		-->
+    
+		<footer>
+			<hr>
+        	<p>Copyright<sup>&#169;</sup> 2015 Clean Type.  All Rights Reserved.  Designed by Harbor View Solutions / xtremeBrit Designs</p>
+      
+			<nav class="footerMenu">
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><img id="dividerBarImg" src="images/dividerBar.png"></li>
+					<li><a href="#">Terms of Use</a></li>
+				</ul>
+			</nav>
+		</footer>
+  
+  </body>
+
+</html>
