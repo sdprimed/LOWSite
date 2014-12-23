@@ -1,0 +1,132 @@
+@media (min-width: 500px){
+  body
+  {
+  	width: 960px; 
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+}
+
+body
+{
+    /*background-color: #F0D2B4;  /* rgb(240, 210, 180) */
+    background-color: #FFCCCC;  /* websafe */
+    font-family: 'Bitter', Verdana, Geneva, sans-serif; 
+    font-size: 12pt;
+ }
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* General Layout                                                                                                                 */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* -------------------------------------------------------------------------- */
+/* Header Section                                                             */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 500 px) {
+  header { width: 100%; height: 175px; background-color: #111111; margin: 0px;  padding-top: 5px; }
+}
+
+header { height: 175px; background-color: #111111; padding-top: 5px; }
+	.headerLogo {   width: 200px; }
+
+/* -------------------------------------------------------------------------- */
+/* Navigation Toolbar                                                         */
+/* -------------------------------------------------------------------------- */
+ 
+@media (min-width: 500px) {
+  nav.mainMenu { width: 100%; height: 50px; margin: 3px 0px; background-color: #DAA05D}
+  nav.mainMenu ul { margin: 0px; padding-top: 10px; }
+  nav.mainMenu li { 
+    display: inline; 
+    list-style-type: none; 
+    padding:0px 28px;
+    font-size: 24px; 
+    font-weight: bold; 
+    font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
+    }
+  nav.mainMenu li a { color: #3C2415; text-decoration: none; }
+  nav.mainMenu li a:hover { color: #3C2415; text-decoration: none; }
+  nav.mainMenu li a:active { color: #FFFFFF; text-decoration: none; }
+}
+
+@media (max-width: 499px) {
+  nav.mainMenu { width: 50%; background-color: none}
+  nav.mainMenu ul { margin: 0px; padding-top: 2px; }
+  nav.mainMenu li { 
+      list-style-type: none; 
+      margin-top: 3px; 
+      padding: 3px 3px;
+      font-size: 20px; 
+      font-weight: bold; 
+      font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
+      text-align: center;
+      background-color: #DAA05D;
+      border: thin groove;
+      border-color: #DAA05D;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+  nav.mainMenu li a { color: #3C2415; text-decoration: none; }
+  nav.mainMenu li a:hover { color: #3C2415; text-decoration: none; }
+  nav.mainMenu li a:active { color: #FFFFFF; text-decoration: none; }
+  }
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Footer Section                                                             */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 500px)
+{
+  footer { width: 960px; }
+}
+footer { 
+  float: bottom;
+  height: 50px; 
+  padding-top: 10px; 
+  clear: both; 
+  text-align: center; 
+  font-family: Verdana, Geneva, sans-serif; 
+  font-size: 10px; 
+  color: #3C2415; }
+
+nav.footerMenu li { 
+  display: inline; 
+  list-style-type: none; 
+  padding: 0px 3px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  font-color: #3C2415; }
+nav.footerMenu li a { color: #3C2415; }
+nav.footerMenu li a:hover { color: #3C2415; }
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* General Formatting                                                                                                             */
+/* Used as the default text within the page content section.
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+#formatSummaryPhilosopher { font-size: 20px; text-align: justify; font-family: 'Philosopher', sans-serif; }
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* Image Formatting                                                                                                               */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+#dividerBarImg { width: 1px; height: 10px; }			/*  Divider bar between list values.  See Privacy Policy | Terms of Use  */
+
+#companyLogoImg { width: 150px; height: 150px; }
+
+#galleryImgSingle { width: 145px; height: 150px; }
+#galleryImgDouble { width: 290px; height: 150px; }
+#galleryImgQuad { width: 290px; height: 304px; }
+
+#historyImgRight { width:140px; height: 170px;}
+
+
