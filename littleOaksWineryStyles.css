@@ -90,6 +90,16 @@ nav.footerMenu li a:hover { color: #3C2415; }
 
 
 /* --------------------------------------------------------------------------------------------------------- */
+/* History page content                                                                                         */
+/* --------------------------------------------------------------------------------------------------------- */
+.contentHistory { width: auto; margin-top: -50px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 18px; color: #000000; text-align: justify; }
+
+.historyRowSm td { width:145px; height: 145px; padding: 5px }
+.historyRowMed td { width:740px; height: 145px; padding: 5px }
+
+.photoCaption { text-align: justify; }
+
+/* --------------------------------------------------------------------------------------------------------- */
 /* Gallery page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
 .contentGallery { width: auto; margin-top: -25px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 14px; color: #000000; text-align: justify; }
@@ -97,7 +107,6 @@ nav.footerMenu li a:hover { color: #3C2415; }
 .galleryTable table, td, th { border: hidden; #680211; }
 
 .galleryTable td { width:145px; height: 145px; padding: 5px;}
-
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
@@ -120,6 +129,8 @@ nav.footerMenu li a:hover { color: #3C2415; }
 #galleryImgSingle { width: 145px; height: 150px; }
 #galleryImgDouble { width: 290px; height: 150px; }
 #galleryImgQuad { width: 290px; height: 304px; }
+
+#historyImgRight { float: center; width:140px; height: 170px;}
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
