@@ -1,6 +1,6 @@
 <!-- You can use either the "$" to state "this is jQuery" or use "jQuery".  "$" is the most common practice. -->
 <!-- jQuery(document).ready(  function() -->
-$(document).ready(  
+$(document).ready(
 	function()
 	{
 			$(".menuHome").click(function()
@@ -12,6 +12,8 @@ $(document).ready(
 				$(".contentWineClub").hide();
 				$(".contentAbout").hide();
 				$(".contentContactUs").hide();
+				$(".sidePanelHomeLinks" ).show();
+				$(".sidePanelHistoryLinks" ).hide();
 			});
 								
 			$(".menuHistory").click(function()
@@ -23,6 +25,8 @@ $(document).ready(
 				$(".contentWineClub").hide();
 				$(".contentAbout").hide();
 				$(".contentContactUs").hide();
+				$( ".sidePanelHomeLinks" ).hide();
+				$( ".sidePanelHistoryLinks" ).show();
 			});
 								
 			$(".menuGallery").click(function()
@@ -34,6 +38,8 @@ $(document).ready(
 				$(".contentWineClub").hide();
 				$(".contentAbout").hide();
 				$(".contentContactUs").hide();
+				$( ".sidePanelHomeLinks" ).show();
+				$( ".sidePanelHistoryLinks" ).hide();
 			});
 						
 			$(".menuProducts").click(function()
@@ -55,17 +61,6 @@ $(document).ready(
 				$(".contentProducts").hide();
 				$(".contentWineClub").show();
 				$(".contentAbout").hide();
-				$(".contentContactUs").hide();
-			});
-						
-			$(".menuAbout").click(function()
-			{
-				$(".contentHome").hide();
-				$(".contentHistory").hide();
-				$(".contentGallery").hide();
-				$(".contentProducts").hide();
-				$(".contentWineClub").hide();
-				$(".contentAbout").show();
 				$(".contentContactUs").hide();
 			});
 						

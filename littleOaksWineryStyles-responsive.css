@@ -9,8 +9,8 @@
 
 body
 {
-    /*background-color: #F0D2B4;  /* rgb(240, 210, 180) */
-    background-color: #FFCCCC;  /* websafe */
+    background-color: #F0D2B4;  /* rgb(240, 210, 180) */
+    /* background-color: #FFCCCC;   websafe */
     font-family: 'Bitter', Verdana, Geneva, sans-serif; 
     font-size: 12pt;
  }
@@ -20,12 +20,17 @@ body
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* General Layout                                                                                                                 */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
+  .head {
+    font-size: 20px; 
+    font-weight: bold; 
+    font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
+    text-align: center;
+  }
 /* -------------------------------------------------------------------------- */
 /* Header Section                                                             */
 /* -------------------------------------------------------------------------- */
 @media (min-width: 500 px) {
-  header { width: 100%; height: 175px; background-color: #111111; margin: 0px;  padding-top: 5px; }
+  header { width: 100%;  }
 }
 
 header { height: 175px; background-color: #111111; padding-top: 5px; }
@@ -52,11 +57,11 @@ header { height: 175px; background-color: #111111; padding-top: 5px; }
 }
 
 @media (max-width: 499px) {
-  nav.mainMenu { width: 50%; height: 50px; margin: 0px 0px; background-color: none}
+  nav.mainMenu { width: 50%; background-color: none}
   nav.mainMenu ul { margin: 0px; padding-top: 2px; }
   nav.mainMenu li { 
       list-style-type: none; 
-      margin: 3px 3px; 
+      margin-top: 3px; 
       padding: 3px 3px;
       font-size: 20px; 
       font-weight: bold; 
@@ -79,8 +84,7 @@ header { height: 175px; background-color: #111111; padding-top: 5px; }
 /* -------------------------------------------------------------------------- */
 /* Footer Section                                                             */
 /* -------------------------------------------------------------------------- */
-@media (min-width: 500px)
-{
+@media (min-width: 500px){
   footer { width: 960px; }
 }
 footer { height: 50px; padding-top: 10px; clear: both; text-align: center; font-family: Verdana, Geneva, sans-serif; font-size: 10px; color: #3C2415; }
@@ -95,6 +99,8 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* Side Bar content                                                                                                               */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
+
+@media (min-width: 500px){
   .sidePanel { width: 174px; height: 300px; float: left; margin: 20px 0px; padding-right: 10px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 16px; color: #680211; border-right-style: solid; border-right-width: thin; border-right-color: #680211; }
 
   .sidePanelNav { width: 185px; margin: 0px; padding: 0px; }
@@ -102,45 +108,106 @@ nav.footerMenu li a:hover { color: #3C2415; }
 
   .sidePanelNav li
   {
-  	list-style: none; 
-  	/*display: inline;*/
-  	margin: 10px 15px;
-  	padding: 7px 10px;
-  	font-family: 'Yanone Kaffeesatz', Verdana; 
-  	font-size: 20px; 
-  	text-align: center;
-  	background-color: #680211;
-  	border: thin groove;
-  	border-color: #B96666;
-  	border-radius: 5px;
-  	-moz-border-radius: 5px;
-  	-webkit-border-radius: 5px;
+    list-style: none; 
+    /*display: inline;*/
+    margin: 10px 15px;
+    padding: 7px 10px;
+    font-family: 'Yanone Kaffeesatz', Verdana; 
+    font-size: 20px; 
+    text-align: center;
+    background-color: #680211;
+    border: thin groove;
+    border-color: #B96666;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
   }
-
   .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
 
- 
-  .sidePanelLinks{ width: 185px; margin: 30px 0px; padding: 0px; }
-  .sidePanelLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
-  .sidePanelLinks li { list-style: none; padding: 7px 0px; }
-  .sidePanelLinks li a { color: #680211; text-decoration: none; }
+
+  .sidePanelHomeLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelHomeLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
+  .sidePanelHomeLinks li { list-style: none; padding: 7px 0px; }
+  .sidePanelHomeLinks li a { color: #680211; text-decoration: none; }
+
+  .sidePanelHistoryLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelHistoryLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
+  .sidePanelHistoryLinks li { list-style: none; padding: 7px 7px; }
+  .sidePanelHistoryLinks li a { color: #680211; text-decoration: none}
+    
+} 
+
+@media (max-width: 499px){
+  .sidePanel { 
+    width: 75px; 
+    height: auto; 
+    float: left; 
+    font-family: 'Yanone Kaffeesatz', Verdana; 
+    font-size: 16px; 
+    color: #680211; 
+    border-right-style: none; 
+    border-right-width: thin; 
+    border-right-color: #680211; 
+  }
+
+  .sidePanelNav { width: 185px; margin: 0px; padding: 0px; }
+  .sidePanelNav ul { margin: 0px 0px 0px 10px; padding: 0px; }
+
+  .sidePanelNav li
+  {
+    list-style: none; 
+    /*display: inline;*/
+    margin: 10px 15px;
+    padding: 7px 10px;
+    font-family: 'Yanone Kaffeesatz', Verdana; 
+    font-size: 20px; 
+    text-align: center;
+    background-color: #680211;
+    border: thin groove;
+    border-color: #B96666;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
 
 
+  .sidePanelHomeLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelHomeLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
+  .sidePanelHomeLinks li { list-style: none; padding: 7px 0px; }
+  .sidePanelHomeLinks li a { color: #680211; text-decoration: none; }
+
+  .sidePanelHistoryLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelHistoryLinks ul { margin: 0px 10px 0px 25px; }
+  .sidePanelHistoryLinks li { list-style: none; }
+  .sidePanelHistoryLinks li a { color: #680211; }
+    
+} 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Main page content                                                                                                              */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-.pageContent { width: 740px; height: auto; padding: 50px 20px 0px 5px; float: right; }
+@media (min-width: 500px){
+  .pageContent { width: 740px; height: auto; padding: 50px 20px 0px 5px; float: right; }
 
-.contentHome { width: 740px; height: auto; margin-top: -50px; padding: 50px -50px 0px 5px; }
+  .contentHome { width: 740px; height: auto; margin-top: -50px; padding: 50px -50px 0px 5px; }
+}
+@media (max-width: 499px){
+  .pageContent { width: 740px; height: auto; padding: 50px 20px 0px 5px; float: right; }
 
+  .contentHome { width: auto; height: auto; padding: 50px -50px 0px 5px; }
+}
+#contentHome {display: none}
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* History page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
-.contentHistory { width: auto; margin-top: -50px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 120%; color: #000000; text-align: justify; }
+@media (min-width: 500px){
+  .contentHistory { margin-top: -50px; }
+}
+.contentHistory { width: auto; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 120%; color: #000000; text-align: justify; }
 
-.historyRowSm td { width:145px; height: 145px; padding: 5px }
+.historyRow td { width:145px; height: 145px; padding: 5px }
 .historyRowMed td { width:740px; height: 145px; padding: 5px }
 
 .photoCaption { text-align: center; }
