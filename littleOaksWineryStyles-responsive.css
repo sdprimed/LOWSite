@@ -1,40 +1,46 @@
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* General Layout                                                                                                                 */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
 @media (min-width: 500px){
   body
   {
-  	width: 960px; 
-  	margin-left: auto;
-  	margin-right: auto;
+    width: 960px; 
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+@media (max-width: 499px){
+  body{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
 }
 
 body
 {
     background-color: #F0D2B4;  /* rgb(240, 210, 180) */
-    /* background-color: #FFCCCC;   websafe */
     font-family: 'Bitter', Verdana, Geneva, sans-serif; 
-    font-size: 12pt;
+    font-size: 100%;
  }
 
-
-
-/* ------------------------------------------------------------------------------------------------------------------------------ */
-/* General Layout                                                                                                                 */
-/* ------------------------------------------------------------------------------------------------------------------------------ */
-  .head {
-    font-size: 20px; 
-    font-weight: bold; 
-    font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
-    text-align: center;
-  }
 /* -------------------------------------------------------------------------- */
 /* Header Section                                                             */
 /* -------------------------------------------------------------------------- */
-@media (min-width: 500 px) {
-  header { width: 100%;  }
+@media (max-width: 499px) {
+  header { width: 100%; height: 120px; background-color: #111111; margin-top: -3%}
+  #companyLogoImg { width: 120px; height: 120px; }
 }
 
-header { height: 175px; background-color: #111111; padding-top: 5px; }
-	.headerLogo {   width: 200px; }
+@media (min-width: 500px) {
+  header { height: 175px; background-color: #111111; padding-top: 5px; }
+  	.headerLogo {   width: 200px; }
+    #companyLogoImg { width: 150px; height: 150px; }
+}
 
 /* -------------------------------------------------------------------------- */
 /* Navigation Toolbar                                                         */
@@ -51,19 +57,20 @@ header { height: 175px; background-color: #111111; padding-top: 5px; }
     font-weight: bold; 
     font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
     }
-  nav.mainMenu li a { color: #3C2415; text-decoration: none; }
-  nav.mainMenu li a:hover { color: #3C2415; text-decoration: none; }
-  nav.mainMenu li a:active { color: #FFFFFF; text-decoration: none; }
+
 }
 
 @media (max-width: 499px) {
-  nav.mainMenu { width: 50%; background-color: none}
-  nav.mainMenu ul { margin: 0px; padding-top: 2px; }
+  nav.mainMenu { width: 50%; 
+    float:left; padding-right: 0%; margin-left: 0%}
+  
+  nav.mainMenu ul { margin: 0%; padding-top: 2px; }
   nav.mainMenu li { 
       list-style-type: none; 
       margin-top: 3px; 
       padding: 3px 3px;
-      font-size: 20px; 
+      margin-left: 0%;
+      font-size: 110%; 
       font-weight: bold; 
       font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
       text-align: center;
@@ -74,11 +81,11 @@ header { height: 175px; background-color: #111111; padding-top: 5px; }
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
     }
+  }
+
   nav.mainMenu li a { color: #3C2415; text-decoration: none; }
   nav.mainMenu li a:hover { color: #3C2415; text-decoration: none; }
   nav.mainMenu li a:active { color: #FFFFFF; text-decoration: none; }
-  }
-
 
 
 /* -------------------------------------------------------------------------- */
@@ -87,9 +94,11 @@ header { height: 175px; background-color: #111111; padding-top: 5px; }
 @media (min-width: 500px){
   footer { width: 960px; }
 }
-footer { height: 50px; padding-top: 10px; clear: both; text-align: center; font-family: Verdana, Geneva, sans-serif; font-size: 10px; color: #3C2415; }
+footer { height: 50px; padding-top: 10px; clear: both; 
+  text-align: center; font-family: Verdana, Geneva, sans-serif; font-size: 10px; color: #3C2415; }
 
-nav.footerMenu li { display: inline; list-style-type: none; padding: 0px 3px; margin-right: auto; margin-left: auto; font-color: #3C2415; }
+nav.footerMenu li { display: inline; list-style-type: none; 
+  padding: 0px 3px; margin-right: auto; margin-left: auto; font-color: #3C2415; }
 nav.footerMenu li a { color: #3C2415; }
 nav.footerMenu li a:hover { color: #3C2415; }
 
@@ -99,12 +108,16 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* Side Bar content                                                                                                               */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
+  .sidePanel { 
+    width: 175px; 
+    height: 300px; 
+    float: left; 
+    font-family: 'Yanone Kaffeesatz', Verdana; 
+    font-size: 110%; color: #680211;
 
-@media (min-width: 500px){
-  .sidePanel { width: 174px; height: 300px; float: left; margin: 20px 0px; padding-right: 10px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 16px; color: #680211; border-right-style: solid; border-right-width: thin; border-right-color: #680211; }
+  }
 
-  .sidePanelNav { width: 185px; margin: 0px; padding: 0px; }
-  .sidePanelNav ul { margin: 0px 0px 0px 10px; padding: 0px; }
+  .sidePanelNav { width: 100%; margin: 0px; padding: 0px; }
 
   .sidePanelNav li
   {
@@ -113,7 +126,6 @@ nav.footerMenu li a:hover { color: #3C2415; }
     margin: 10px 15px;
     padding: 7px 10px;
     font-family: 'Yanone Kaffeesatz', Verdana; 
-    font-size: 20px; 
     text-align: center;
     background-color: #680211;
     border: thin groove;
@@ -122,15 +134,13 @@ nav.footerMenu li a:hover { color: #3C2415; }
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   }
-  .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
 
-
-  .sidePanelHomeLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelHomeLinks { width: 100%; margin: 30px 0px; padding: 0px; }
   .sidePanelHomeLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
-  .sidePanelHomeLinks li { list-style: none; padding: 7px 0px; }
+  .sidePanelHomeLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelHomeLinks li a { color: #680211; text-decoration: none; }
 
-  .sidePanelHistoryLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelHistoryLinks { width: 100%; margin: 30px 0px; padding: 0px; }
   .sidePanelHistoryLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
   .sidePanelHistoryLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelHistoryLinks li a { color: #680211; text-decoration: none}
@@ -139,54 +149,48 @@ nav.footerMenu li a:hover { color: #3C2415; }
   .sidePanelGalleryLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
   .sidePanelGalleryLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelGalleryLinks li a { color: #680211; text-decoration: none}
+
+
+@media (min-width: 500px){
+  .sidePanel { 
+    float: left; 
+    margin: 20px 0px; 
+    padding-right: 10px;
+    border-right-style: solid; 
+    border-right-width: thin; 
+    border-right-color: #680211; 
+  }
+
+  .sidePanelNav ul { margin: 0px 0px 0px 10px; padding: 0px; }
+
+  .sidePanelNav li
+  {
+    margin: 10px 15px;
+    padding: 7px 10px;
+  }
+  .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
     
 } 
 
 @media (max-width: 499px){
   .sidePanel { 
-    width: 75px; 
+    width: 50%; 
     height: auto; 
-    float: left; 
-    font-family: 'Yanone Kaffeesatz', Verdana; 
-    font-size: 16px; 
-    color: #680211; 
-    border-right-style: none; 
-    border-right-width: thin; 
-    border-right-color: #680211; 
+    float: right; 
+    font-size: 100%;
   }
-
-  .sidePanelNav { width: 185px; margin: 0px; padding: 0px; }
-  .sidePanelNav ul { margin: 0px 0px 0px 10px; padding: 0px; }
 
   .sidePanelNav li
   {
-    list-style: none; 
-    /*display: inline;*/
-    margin: 10px 15px;
-    padding: 7px 10px;
-    font-family: 'Yanone Kaffeesatz', Verdana; 
-    font-size: 20px; 
-    text-align: center;
-    background-color: #680211;
-    border: thin groove;
-    border-color: #B96666;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    width: 75%;
+    margin: 3% 0%;
+    padding: 7px;
   }
   .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
 
-
-  .sidePanelHomeLinks { width: 185px; margin: 30px 0px; padding: 0px; }
-  .sidePanelHomeLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
-  .sidePanelHomeLinks li { list-style: none; padding: 7px 0px; }
-  .sidePanelHomeLinks li a { color: #680211; text-decoration: none; }
-
-  .sidePanelHistoryLinks { width: 185px; margin: 30px 0px; padding: 0px; }
-  .sidePanelHistoryLinks ul { margin: 0px 10px 0px 25px; }
-  .sidePanelHistoryLinks li { list-style: none; }
-  .sidePanelHistoryLinks li a { color: #680211; }
-    
+  .sidePanelHomeLinks { width: 100%; margin: 0px 0px; padding-left: 10px; }
+  .sidePanelHistoryLinks { width: 90%; margin: 0px 0px; padding-left: 10px; }
+  .sidePanelGalleryLinks { width: 100%; margin: 0px 0px; padding-left: 10px; } 
 } 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
@@ -202,6 +206,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 
   .contentHome { width: auto; height: auto; padding: 50px -50px 0px 5px; }
 }
+
 #contentHome {display: none}
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -224,7 +229,6 @@ nav.footerMenu li a:hover { color: #3C2415; }
 
 #galleryTable td { vertical-align: middle; text-align: justify; padding: 5px; }
 
-
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* General Formatting                                                                                                             */
 /* Used as the default text within the page content section.
@@ -241,7 +245,6 @@ nav.footerMenu li a:hover { color: #3C2415; }
 
 #dividerBarImg { width: 1px; height: 10px; }			/*  Divider bar between list values.  See Privacy Policy | Terms of Use  */
 
-#companyLogoImg { width: 150px; height: 150px; }
 
 #galleryImgSingle { width: 145px; height: 150px; }
 #galleryImgDouble { width: 290px; height: 150px; }
