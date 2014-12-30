@@ -61,8 +61,8 @@ body
 }
 
 @media (max-width: 499px) {
-  nav.mainMenu { width: 50%; 
-    float:left; padding-right: 0%; margin-left: 0%}
+  nav.mainMenu { width: 50%; height:200px;
+    float:left; padding-right: 0%; margin-left: 0%; }
   
   nav.mainMenu ul { margin: 0%; padding-top: 2px; }
   nav.mainMenu li { 
@@ -70,7 +70,7 @@ body
       margin-top: 3px; 
       padding: 3px 3px;
       margin-left: 0%;
-      font-size: 110%; 
+      font-size: 130%; 
       font-weight: bold; 
       font-family: 'Bilbo Swash Caps', cursive, Verdana, Geneva, sans-serif; 
       text-align: center;
@@ -175,9 +175,9 @@ nav.footerMenu li a:hover { color: #3C2415; }
 @media (max-width: 499px){
   .sidePanel { 
     width: 50%; 
-    height: auto; 
+    height: 200px; 
     float: right; 
-    font-size: 100%;
+    font-size: 120%;
   }
 
   .sidePanelNav li
@@ -202,9 +202,9 @@ nav.footerMenu li a:hover { color: #3C2415; }
   .contentHome { width: 740px; height: auto; margin-top: 0px; padding: 0px -50px 0px 5px; }
 }
 @media (max-width: 499px){
-  .pageContent { width: 740px; height: auto; padding: 0px 20px 0px 5px; float: right; }
+  .pageContent { width: 100%; height: auto; padding-left:5%;}
 
-  .contentHome { width: auto; height: auto; padding: 0px -50px 0px 5px; }
+  .contentHome { width: 90%; height: auto; margin-top:235px; float:middle;}
 }
 
 #contentHome {display: none}
@@ -214,20 +214,62 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* --------------------------------------------------------------------------------------------------------- */
 @media (min-width: 500px){
   .contentHistory { margin-top: 0px; }
+  .historyRow td { width:145px; height: 135px; padding: 5px }
+  .historyRowMed td { width:740px; height: 135px; padding: 5px }
 }
-.contentHistory { width: auto; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 120%; color: #000000; text-align: justify; }
 
-.historyRow td { width:145px; height: 135px; padding: 5px }
-.historyRowMed td { width:740px; height: 135px; padding: 5px }
+@media (max-width: 499px){
+  .contentHistory { width: 90%; margin-top: 235px; }
+  .historyRow td {  }
+  .historyRowMed td { }
+}
+
+.contentHistory { width: auto; font-family: 'Yanone Kaffeesatz', Verdana; 
+    font-size: 120%; color: #000000; text-align: justify; }
+
+
 
 .photoCaption { text-align: center; }
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* Gallery page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
-.contentGallery { width: auto; margin-top: 25px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 14px; color: #000000; text-align: justify; }
+.contentGallery { .font-family: 'Yanone Kaffeesatz', Verdana; color: #000000; text-align: justify;}
+@media (min-width: 500px){
+.contentGallery { width: auto; margin-top: 25px; font-size: 14px;  }
+}
+
+@media (max-width: 499px){
+.contentGallery { width: 90%; margin-top: 270px; font-size: 130%;  }
+}
 
 #galleryTable td { vertical-align: middle; text-align: justify; padding: 5px; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* Products page content                                                                                                              */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+@media (min-width: 500px){
+
+  .contentProducts { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }
+}
+@media (max-width: 499px){
+
+  .contentProducts { width: auto; margin-top: 235px; }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* Wine Club page content                                                                                                              */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+@media (min-width: 500px){
+
+  .contentWineClub { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }
+}
+@media (max-width: 499px){
+
+  .contentWineClub { width: auto; margin-top: 235px; }
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Contact Us page content                                                                                                              */
@@ -238,7 +280,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 }
 @media (max-width: 499px){
 
-  .contentContactUs { width: auto; height: auto; padding: 0px -50px 0px 5px; }
+  .contentContactUs { width: auto; margin-top: 235px; }
 }
 
 
@@ -269,7 +311,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /*   Slide stuff
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
+/*
 #slides .slidesjs-navigation {
       margin-top:3px;
     }
@@ -328,7 +370,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
     .navbar {
       overflow: hidden
     }
-
+*/
 #slides {display:none;}
 
 
