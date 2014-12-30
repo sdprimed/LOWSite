@@ -29,6 +29,8 @@ $(document).ready(
 				$( ".sidePanelHomeLinks" ).hide();
 				$( ".sidePanelHistoryLinks" ).show();
 				$(".sidePanelGalleryLinks" ).hide();
+				$(".historyOfLOW").show();
+				$(".historyOfSDWines").hide();
 			});
 								
 			$(".menuGallery").click(function()
@@ -89,6 +91,26 @@ $(document).ready(
 				$(".sidePanelHomeLinks" ).show();
 				$(".sidePanelHistoryLinks" ).hide();
 				$(".sidePanelGalleryLinks" ).hide();
+			});
+
+			$(".linkHistoryOfLOW").click(function()
+			{
+				$(".historyOfLOW").show();
+				$(".historyOfSDWines").hide();
+			});
+			
+			$(".linkHistoryOfSDWines").click(function()
+			{
+				$(".historyOfLOW").hide();
+				$(".historyOfSDWines").show();
+			});
+						
+			$(".photoGalleryRedGrapes").click(function()
+			{
+				$(".galleryWhiteGrapes").hide();
+				$(".galleryRedGrapes").show();
+				$(".galleryProcessing").hide();
+				$(".galleryReleaseParty").hide();
 			});
 						
 			$(".photoGalleryWhiteGrapes").click(function()

@@ -197,14 +197,14 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* Main page content                                                                                                              */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 @media (min-width: 500px){
-  .pageContent { width: 740px; height: auto; padding: 50px 20px 0px 5px; float: right; }
+  .pageContent { width: 740px; height: auto; padding: 0px 20px 0px 5px; float: right; }
 
-  .contentHome { width: 740px; height: auto; margin-top: -50px; padding: 50px -50px 0px 5px; }
+  .contentHome { width: 740px; height: auto; margin-top: 0px; padding: 0px -50px 0px 5px; }
 }
 @media (max-width: 499px){
-  .pageContent { width: 740px; height: auto; padding: 50px 20px 0px 5px; float: right; }
+  .pageContent { width: 740px; height: auto; padding: 0px 20px 0px 5px; float: right; }
 
-  .contentHome { width: auto; height: auto; padding: 50px -50px 0px 5px; }
+  .contentHome { width: auto; height: auto; padding: 0px -50px 0px 5px; }
 }
 
 #contentHome {display: none}
@@ -213,21 +213,34 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* History page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
 @media (min-width: 500px){
-  .contentHistory { margin-top: -50px; }
+  .contentHistory { margin-top: 0px; }
 }
 .contentHistory { width: auto; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 120%; color: #000000; text-align: justify; }
 
-.historyRow td { width:145px; height: 145px; padding: 5px }
-.historyRowMed td { width:740px; height: 145px; padding: 5px }
+.historyRow td { width:145px; height: 135px; padding: 5px }
+.historyRowMed td { width:740px; height: 135px; padding: 5px }
 
 .photoCaption { text-align: center; }
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* Gallery page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
-.contentGallery { width: auto; margin-top: -25px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 14px; color: #000000; text-align: justify; }
+.contentGallery { width: auto; margin-top: 25px; font-family: 'Yanone Kaffeesatz', Verdana; font-size: 14px; color: #000000; text-align: justify; }
 
 #galleryTable td { vertical-align: middle; text-align: justify; padding: 5px; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* Contact Us page content                                                                                                              */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+@media (min-width: 500px){
+
+  .contentContactUs { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }
+}
+@media (max-width: 499px){
+
+  .contentContactUs { width: auto; height: auto; padding: 0px -50px 0px 5px; }
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* General Formatting                                                                                                             */
