@@ -300,6 +300,16 @@ $(document).ready(
 				$(".processingImg7Text").hide();
 				$(".processingImg8Text").show();
 			});
+
+			$(".linkPrivacyPolicy").click(function()
+			{
+				$(".menuWineClub").click();
+			});
+			
+			$(".linkTerms").click(function()
+			{
+				$(".menuProducts").click();
+			});
 	});
 
 
