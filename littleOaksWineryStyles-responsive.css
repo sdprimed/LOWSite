@@ -207,8 +207,6 @@ nav.footerMenu li a:hover { color: #3C2415; }
   .contentHome { width: 90%; height: auto; margin-top:235px; float:middle;}
 }
 
-#contentHome {display: none}
-
 /* --------------------------------------------------------------------------------------------------------- */
 /* History page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
@@ -248,7 +246,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Products page content                                                                                                              */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
+.contentProducts { color: #000000; text-align: justify;}
 @media (min-width: 500px){
 
   .contentProducts { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }
@@ -261,7 +259,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Wine Club page content                                                                                                              */
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-
+.contentWineClub { color: #000000; text-align: justify;}
 @media (min-width: 500px){
 
   .contentWineClub { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }

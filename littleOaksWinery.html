@@ -1,14 +1,18 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 
 
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 		<title>Little Oaks Winery</title>
     
 		<!--<link href="littleOaksWineryStyles.css" rel="stylesheet">-->
 		<link href="littleOaksWineryStyles-responsive.css" rel="stylesheet"> 
-		<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Philosopher|Bitter|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        <link href="lowfonts.css" rel="stylesheet"> 
+        <!--
+		<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Philosopher|Bitter|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'> 
+        -->
         
    		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
 	   	<script src="littleOaksWineryScripts.js"></script>
@@ -109,8 +113,8 @@
         -----------------------------------------------------------------------------------------------------------------------------
         -->       
         	<section class="contentHome" >
-        		<p id="formatSummaryPhilosopher"> 
-					We will be offering Viognier, Malbec, Sangiovese, Syrah, Merlot, Cabernet Sauvignon, Barbera, and red blends in limited quantities. Stay tuned for our 2013 releases!          
+        		<p class="formatSummaryPhilosopher"> 
+					We are an Urban Winery offering Viognier, Malbec, Sangiovese, Syrah, Merlot, Cabernet Sauvignon, Barbera, and red blends in limited quantities. Stay tuned for our 2013 releases!          
         		</p>
         		<div id="slides">
 					<img src="images/slideShow/slide_vinyard.jpg">
@@ -121,7 +125,7 @@
      				<img src="images/slideShow/slide_LOW_cake_front.jpg">
   				</div>
                 <section>
-                    <p id="formatSummaryPhilosopher">
+                    <p class="formatSummaryPhilosopher">
                         <strong><a id="announcements">Announcements</a></strong>
                     </p>
                     <p>
@@ -140,7 +144,7 @@
                     </p>
                 </section>
                 <section>
-                    <p id="formatSummaryPhilosopher">
+                    <p class="formatSummaryPhilosopher">
                         <strong><a id="news">News Bulletin</a></strong>
                     </p>
                     <p>
@@ -160,7 +164,7 @@
                 </section>
 
                 <section>
-                    <p id="formatSummaryPhilosopher">
+                    <p class="formatSummaryPhilosopher">
                         <strong><a id="events">Events</a></strong>
                     </p>
                     <p>
@@ -189,7 +193,7 @@
         	<section class="contentHistory" style="display: none;">
                 <section class="historyOfLOW">
 
-    	 			<p id="formatSummaryPhilosopher"> 
+    	 			<p class="formatSummaryPhilosopher"> 
     	 				<strong>A brief history of Little Oaks Winery as recounted by winery owner Rich Sportsman</strong> </p>
     				<table>
     					<tr class= "historyRow">
@@ -233,7 +237,7 @@
             		
                 </section>
 
-                <section class="historyOfSDWines" id="formatSummaryPhilosopher" display:"none">
+                <section class="historyOfSDWines" class="formatSummaryPhilosopher" display:"none">
                     <p><strong>WineMaking In San Diego</strong></p>
                     <p>In starting up Little Oaks Winery, we have joined a group of over 100 commercial wineries now operating in the San Diego area.  Check <a href="http://sandiegowineries.org/" target="_blank">here</a> for a listing of many of these.<p>
                     <p>Historically, San Diego was the first area to produce wine in Alta California. Around 1781, Mission San Diego de Alcalá started making wine using the California Mission grape.  About 1830,  commercial winemaking in southern California was begun by a Frenchman, Jean Louis Vignes. Arriving from Bordeaux, he imported many varieties of the native European Vitis vinifera. His vineyard was located in what is now downtown Los Angeles. In 1857, a group of German immigrants founded Anaheim and began to produce wine. With the introduction of irrigation, Anaheim remained a prosperous wine producing region until the 1880s. During the period of 1860 to 1885, Anaheim wineries produced more than 1.25 million gallons of wine annually. In the 1880s, the phylloxera blight completely wiped out the vineyards of southern Calfornia; it would take decades to recover.</p>
@@ -386,17 +390,11 @@
         <section class="contentProducts" style="display: none;">
 
             <section class="dataSecurity">
-                <p id="formatSummaryPhilosopher"> 
+                <p class="formatSummaryPhilosopher"> 
                     <strong>Order Our Products</strong> </p>
                 <p>
                     Order wine from Little Oaks Winery through our secure ecommerce site: <br>
-                    <a href=""> (this link is not activated yet)</a> 
-                </p>
-                <p>
-                    <strong>Privacy and Data Security</strong>
-                </p>
-                <p>
-                    At Little Oaks Winery,your right to privacy and data security is a primary concern. We comply with, and will continue to comply with all applicable industry standards. Your payment and personal information is always safe.  Our Secure Sockets Layer (SSL) software (McAfee Hacker Safe) is the Industry standard and among the best software available today for secure commerce transactions.  It encrypts all of your personal information, including credit card number and address so that it CANNOT be read over the internet.  Little Oaks Winery has very strict policies and procedures designed to protect the privacy of our applicants and customers. We do not sell or share personal or business information. The collection of personal and business information is solely for the purpose of payment transaction processing services, in which Little Oaks Winery may contract or subcontract with third parties engaged in the business of transaction processing and authorization. 
+                    <a href="http://www.vineyard2door.com/79500">click here</a> 
                 </p>
                 <p>
                     <strong>Delivery Policies</strong>
@@ -421,11 +419,17 @@
                 </p>
 
                 <section class="privacyPolicy" >
-                    <p id="formatSummaryPhilosopher"> 
+                    <p class="formatSummaryPhilosopher"> 
                         <strong>Privacy</strong>
                     </p>
                     <p>
                         Little Oaks Winery respects your privacy. We will only collect, store and use your personal information for defined purposes. We use your information to support and enhance our relationship with you, for example, to process your purchase, provide service and support, and share product, service and company news and offerings with you. We do not sell your personal information. We will not share your personal data outside Little Oaks Winery without your consent, except as required by law or to protect Little Oaks Winery its customers, or the public, and then only with partners who share Little Oaks Winery commitment to protecting your privacy and data. At any time you may contact Little Oaks Winery with any privacy questions or concerns you may have. You also may ask at any time to see the personal data you have given us and request correction or deletion. We strive to protect the security of your personal data by use of appropriate measures and processes. 
+                    </p>
+                    <p>
+                    <strong>Data Security</strong>
+                    </p>
+                    <p>
+                        At Little Oaks Winery,your right to privacy and data security is a primary concern. We comply with, and will continue to comply with all applicable industry standards. Your payment and personal information is always safe.  Our Secure Sockets Layer (SSL) software (McAfee Hacker Safe) is the Industry standard and among the best software available today for secure commerce transactions.  It encrypts all of your personal information, including credit card number and address so that it CANNOT be read over the internet.  Little Oaks Winery has very strict policies and procedures designed to protect the privacy of our applicants and customers. We do not sell or share personal or business information. The collection of personal and business information is solely for the purpose of payment transaction processing services, in which Little Oaks Winery may contract or subcontract with third parties engaged in the business of transaction processing and authorization. 
                     </p>
                 </section>
             </section>
@@ -436,7 +440,7 @@
         -----------------------------------------------------------------------------------------------------------------------------
         -->        
         	<section class="contentAbout" style="display: none;">
-	 			<p id="formatSummaryPhilosopher"> 
+	 			<p class="formatSummaryPhilosopher"> 
 					About: Under Construction
         		</p>
             </section>
@@ -484,7 +488,7 @@
 		</footer>
 
         <section class="contentTerms" style="display: none;">
-            <p id="formatSummaryPhilosopher"> 
+            <p class="formatSummaryPhilosopher"> 
                 <strong>Little Oaks Winery Terms and Conditions</strong>
             </p>
             <p>

@@ -26,8 +26,8 @@ $(document).ready(
 				$(".contentWineClub").hide();
 				$(".contentAbout").hide();
 				$(".contentContactUs").hide();
-				$( ".sidePanelHomeLinks" ).hide();
-				$( ".sidePanelHistoryLinks" ).show();
+				$(".sidePanelHomeLinks" ).hide();
+				$(".sidePanelHistoryLinks" ).show();
 				$(".sidePanelGalleryLinks" ).hide();
 				$(".historyOfLOW").show();
 				$(".historyOfSDWines").hide();
@@ -42,8 +42,8 @@ $(document).ready(
 				$(".contentWineClub").hide();
 				$(".contentAbout").hide();
 				$(".contentContactUs").hide();
-				$( ".sidePanelHomeLinks" ).hide();
-				$( ".sidePanelHistoryLinks" ).hide();
+				$(".sidePanelHomeLinks" ).hide();
+				$(".sidePanelHistoryLinks" ).hide();
 				$(".sidePanelGalleryLinks" ).show();
 				$(".galleryWhiteGrapes").show();
 				$(".galleryRedGrapes").hide();
