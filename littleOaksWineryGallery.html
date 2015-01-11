@@ -1,0 +1,256 @@
+<!DOCTYPE html >
+
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Little Oaks Winery</title>
+    
+		<!--<link href="littleOaksWineryStyles.css" rel="stylesheet">-->
+		<link href="littleOaksWineryStyles-responsive.css" rel="stylesheet"> 
+		<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Philosopher|Bitter|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        
+   		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+	   	<script src="littleOaksWineryScripts.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="jquery.slides.min.js"></script>
+
+		<script>
+		    $(function(){
+		      $("#slides").slidesjs({
+		        width: 730,
+		        height: 350,
+		        navigation: { active: false, effect:"slide"},
+		        play: { active: false, // [boolean] Generate the play and stop buttons.
+			  	auto: true 
+			    },
+			  	pagination: {
+      			active: false, // [boolean] Create pagination items.
+    			}
+
+		      });
+		    });
+		 </script>
+	</head>
+
+	<body id="master">
+  
+		<header>
+			<center><figure class="headerLogo"><img id="companyLogoImg" src="images/logo.png" align="middle" width="auto" height="auto"></figure></center>
+		</header>
+      
+		<div align="center">
+			<nav class="mainMenu">
+			<ul>
+				<li><a href="littleOaksWinery.html" target="_self">Home</a></li>
+				<li><a href="littleOaksWineryHistory.html" target="_self">History</a></li>
+				<li><a href="littleOaksWineryGallery.html" target="_self">Gallery</a></li>
+				<li><a href="littleOaksWineryProducts.html" target="_self">Products</a></li>
+				<li><a href="littleOaksWineryWineClub.html" target="_self">Wine Club</a></li>
+				<li><a href="littleOaksWineryContactUs.html" target="_self">Contact Us</a></li>
+			</ul>
+			</nav>
+		</div>
+    
+        
+		<!-- 
+		-----------------------------------------------------------------------------------------------------------------------------
+        --  Side Panel Section.                                                                                                        --
+		-----------------------------------------------------------------------------------------------------------------------------
+		-->
+
+        <div class="sidePanel">
+            
+            <nav class="sidePanelNav">
+				<ul>
+                    <!-- TODO: add the V2D links here to replace the # --> 
+					<li><a href="#">Shop Now!</a></li> 
+					<li><a href="#">Join Our Club</a></li>
+				</ul>
+            </nav>
+            
+            <section class="sidePanelGalleryLinks">
+				<ul>
+					<li class="photoGalleryWhiteGrapes"><a href="#">Viognier</a></li>
+					<li class="photoGalleryRedGrapes"><a href="#">Malbec/Sangiovese</a></li>
+					<li class="photoGalleryProcessing"><a href="#">Processing</a></li>
+					<li class="photoGalleryReleaseParty"><a href="#">Release Party</a></li>
+				</ul>
+            </section>
+
+        </div>
+
+		<!-- 
+		-----------------------------------------------------------------------------------------------------------------------------
+        --  Main Section.                                                                                                        --
+		-----------------------------------------------------------------------------------------------------------------------------
+		-->
+        <main class="pageContent">
+
+	        <!-- 
+   	   	    -----------------------------------------------------------------------------------------------------------------------------
+   	   	    --  Gallery Section.                                                                                                        --
+   	   	    -----------------------------------------------------------------------------------------------------------------------------
+   		    -->
+        	<section class="contentGallery" id="formatSummaryPhilosopher">
+
+				<section class="galleryWhiteGrapes">
+	            	<table id="galleryTable">
+    	            	<tr>
+        	            	<td><img src="images/photoGallery/whiteGrapes/whiteGrapes-VoignierSign.jpg"></td>
+            	        	<td height="170px" width="170px" id="formatSummaryPhilosopher14">
+                            	Viognier is a white wine grape variety that has the potential to product full-bodied wines with a lush, soft character.
+                            	<br><br>The Viognier varietal has more natural aromatics that include notes of peaches, pears, violets & minerality.
+                        	</td>
+                    		<td rowspan="2"><img src="images/photoGallery/whiteGrapes/whiteGrapes-GrapeVine.jpg"></td>
+                		</tr>
+                		<tr>
+                    		<td colspan="2"><img src="images/photoGallery/whiteGrapes/whiteGrapes-BucketsOnTruck.jpg"></td>
+                		</tr>
+                		<tr>
+                    		<td colspan="3"><img src="images/photoGallery/whiteGrapes/whiteGrapes-Crew.jpg"></td>
+                		</tr>
+            		</table>
+				</section>
+
+				<section class="galleryRedGrapes" style="display: none;">
+	            	<table id="galleryTable">
+                		<tr>
+                    		<td><img class="redGrapesImg1" src="images/photoGallery/redGrapes/redGrapes-MalbecSign.jpg"></td>
+                    		<td rowspan="2" colspan="2"><img class="redGrapesImg3" src="images/photoGallery/redGrapes/redGrapes-GrapePicking.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td><img class="redGrapesImg2" src="images/photoGallery/redGrapes/redGrapes-SangioveseSign.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td rowspan="2"><img class="redGrapesImg4" src="images/photoGallery/redGrapes/redGrapes-HavingFun.jpg"></td>
+                    		<td height="140px" width="173px" id="formatSummaryPhilosopher14">
+                        		<section class="redGrapesImg1Text">
+                            		The Malbec grape is a purple grape used in making red wine.  Grapes tend to have an inky dark color.  
+                                    <br><br>They are known as one of the six grapes allowed in the blend of red Bordeaux wine.</section>
+                        		<section class="redGrapesImg2Text" style="display: none;">
+                            		The Sangiovese grape is a red italian grape variety that derives its name from the Latin <i>Sanguis Jovis</i> &ndash; &ldquo;the blood of Jove&rdquo;.
+                                    <br><br>The grapes take on an oaky flavor when aged in barrels.</section>
+                        		<section class="redGrapesImg3Text" style="display: none;">
+                            		More to come!</section>
+                        		<section class="redGrapesImg4Text" style="display: none;">
+                            		More to come!</section>
+                        		<section class="redGrapesImg5Text" style="display: none;">
+                            		More to come!</section>
+                        		<section class="redGrapesImg6Text" style="display: none;">
+                            		More to come!</section>
+                        	</td>
+                    		<td rowspan="2"><img class="redGrapesImg5" src="images/photoGallery/redGrapes/redGrapes-InHand.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td><img class="redGrapesImg6" src="images/photoGallery/redGrapes/redGrapes-OnVine.jpg"></td>
+                		</tr>
+            		</table>
+				</section>
+
+				<section class="galleryProcessing" style="display: none;">
+	            	<table id="galleryTable">
+                		<tr>
+                    		<td><img class="processingImg1" src="images/photoGallery/processing/processing-1.jpg"></td>
+                    		<td><img class="processingImg2" src="images/photoGallery/processing/processing-2.jpg"></td>
+                    		<td><img class="processingImg3" src="images/photoGallery/processing/processing-3.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td><img class="processingImg8" src="images/photoGallery/processing/processing-8.jpg"></td>
+                    		<td height="225px" width="225px" id="formatSummaryPhilosopher14">
+                        		<section class="processingImg1Text">
+                            		Step 1:<br><br>
+                                    After a long day of picking grapes at the local vineyards, the grapes are brought to our facility</section>
+                        		<section class="processingImg2Text" style="display: none;">
+                            		Step 2:<br><br>
+                                    When they come in from the vineyard, the grapes are still attached to the vines</section>
+                        		<section class="processingImg3Text" style="display: none;">
+                            		Step 3:<br><br>
+                                    They are carefully gathered to be placed in the harvester</section>
+                        		<section class="processingImg4Text" style="display: none;">
+                            		Step 4:<br><br>
+                                    The harvester plucks the grapes off the vine so that they can be sorted </section>
+                        		<section class="processingImg5Text" style="display: none;">
+                            		Step 5:<br><br>
+                                    They are lovingly sorted with careful hands and watchful eyes</section>
+                        		<section class="processingImg6Text" style="display: none;">
+                            		Step 6:<br><br>
+                                    Now the grapes can be fermented</section>
+                        		<section class="processingImg7Text" style="display: none;">
+                            		Step 7:<br><br>
+                                    The red grapes are fermented in their skins to increase the tanins</section>
+                        		<section class="processingImg8Text" style="display: none;">
+                            		Step 8:<br><br>
+                                    Finally, the juices are poured into oak barrels to age. We are now bottling and offering our newest releases for you to enjoy. </section>
+                        	</td>
+                    		<td><img class="processingImg4" src="images/photoGallery/processing/processing-4.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td><img class="processingImg7" src="images/photoGallery/processing/processing-7.jpg"></td>
+                    		<td><img class="processingImg6" src="images/photoGallery/processing/processing-6.jpg"></td>
+                    		<td><img class="processingImg5" src="images/photoGallery/processing/processing-5.jpg"></td>
+                		</tr>
+            		</table>
+				</section>
+
+				<section class="galleryReleaseParty" style="display: none;">
+	            	<table id="galleryTable">
+    	            	<tr>
+        	            	<td colspan="3"><img src="images/photoGallery/releaseParty/releaseParty-Celebration.jpg"></td>
+                		</tr>
+                		<tr>
+                    		<td><img src="images/photoGallery/releaseParty/releaseParty-LittleOaks.jpg"></td>
+                    		<td><img src="images/photoGallery/releaseParty/releaseParty-WineALittle.jpg"></td>
+                    		<td><img src="images/photoGallery/releaseParty/releaseParty-WineBottles.jpg"></td>
+                		</tr>
+    	            	<tr>
+        	            	<td colspan="3"><img src="images/photoGallery/releaseParty/releaseParty-Band.jpg"></td>
+                		</tr>
+            		</table>
+				</section>
+                
+			</section> 
+                   
+        </main>
+
+        
+		<!-- 
+		-----------------------------------------------------------------------------------------------------------------------------
+        --  Footer Section.                                                                                                        --
+		-----------------------------------------------------------------------------------------------------------------------------
+		-->
+    
+		<footer>
+			<hr>
+        	<p>Copyright<sup>&#169;</sup> 2015 Clean Type.  All Rights Reserved.  Designed by Harbor View Solutions / xtremeBrit Designs</p>
+      
+			<nav class="footerMenu">
+				<ul>
+					<li class="linkPrivacyPolicy"><a href="#">Privacy Policy</a></li>
+					<li><img id="dividerBarImg" src="images/dividerBar.png"></li>
+					<li class="linkTerms"><a href="#">Terms of Use</a></li>
+				</ul>
+			</nav>
+
+
+		</footer>
+
+        <section class="contentTerms" style="display: none;">
+            <p id="formatSummaryPhilosopher"> 
+                <strong>Little Oaks Winery Terms and Conditions</strong>
+            </p>
+            <p>
+                Terms and Conditions apply. <br>
+                Section Under Construction. Please contact us to learn more. 
+            </p>
+        </section>
+
+  
+  </body>
+
+</html>
