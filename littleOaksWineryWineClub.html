@@ -12,25 +12,7 @@
         
    		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
 	   	<script src="littleOaksWineryScripts.js"></script>
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="jquery.slides.min.js"></script>
 
-		<script>
-		    $(function(){
-		      $("#slides").slidesjs({
-		        width: 730,
-		        height: 350,
-		        navigation: { active: false, effect:"slide"},
-		        play: { active: false, // [boolean] Generate the play and stop buttons.
-			  	auto: true 
-			    },
-			  	pagination: {
-      			active: false, // [boolean] Create pagination items.
-    			}
-
-		      });
-		    });
-		 </script>
 	</head>
 
 	<body id="master">
@@ -59,16 +41,17 @@
 		-----------------------------------------------------------------------------------------------------------------------------
 		-->
 
-        <div class="sidePanel">
+         <div class="sidePanel">
             
             <nav class="sidePanelNav">
 				<ul>
                     <!-- TODO: add the V2D links here to replace the # --> 
-					<li><a href="#">Shop Now!</a></li> 
+					<li><a href="http://www.vineyard2door.com/79500" target="_self">Shop Now!</a></li> 
 					<li><a href="#">Join Our Club</a></li>
 				</ul>
             </nav>
             
+        <!--
             <section class="sidePanelHomeLinks">
 				<ul>
 					<li><a href="#announcements">Announcements</a></li>
@@ -76,22 +59,7 @@
 					<li><a href="#events">Events</a></li>
 				</ul>
             </section>
-
-            <section class="sidePanelHistoryLinks" style="display: none;">
-				<ul>
-					<li class="linkHistoryOfLOW"><a href="#">Little Oaks Winery</a></li>
-					<li class="linkHistoryOfSDWines"><a href="#">Winemaking in San Diego</a></li>
-				</ul>
-            </section>
-
-            <section class="sidePanelGalleryLinks" style="display: none;">
-				<ul>
-					<li class="photoGalleryWhiteGrapes"><a href="#">Viognier</a></li>
-					<li class="photoGalleryRedGrapes"><a href="#">Malbec/Sangiovese</a></li>
-					<li class="photoGalleryProcessing"><a href="#">Processing</a></li>
-					<li class="photoGalleryReleaseParty"><a href="#">Release Party</a></li>
-				</ul>
-            </section>
+        -->
 
         </div>
 
@@ -138,24 +106,14 @@
       
 			<nav class="footerMenu">
 				<ul>
-					<li class="linkPrivacyPolicy"><a href="#">Privacy Policy</a></li>
+					<li><a href="littleOaksWineryPrivacyPolicy.html" target="_self">Privacy Policy</a></li>
 					<li><img id="dividerBarImg" src="images/dividerBar.png"></li>
-					<li class="linkTerms"><a href="#">Terms of Use</a></li>
+					<li><a href="littleOaksWineryTerms.html" target="_self">Terms and Conditions</a></li>
 				</ul>
 			</nav>
 
 
 		</footer>
-
-        <section class="contentTerms" style="display: none;">
-            <p id="formatSummaryPhilosopher"> 
-                <strong>Little Oaks Winery Terms and Conditions</strong>
-            </p>
-            <p>
-                Terms and Conditions apply. <br>
-                Section Under Construction. Please contact us to learn more. 
-            </p>
-        </section>
 
   
   </body>
