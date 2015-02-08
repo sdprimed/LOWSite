@@ -113,7 +113,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
     height: 300px; 
     float: left; 
     font-family: 'Yanone Kaffeesatz', Verdana; 
-    font-size: 110%; color: #680211;
+    font-size: 100%; color: #680211;
 
   }
 
@@ -145,7 +145,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
   .sidePanelHistoryLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelHistoryLinks li a { color: #680211; text-decoration: none}
 
-  .sidePanelGalleryLinks { width: 185px; margin: 30px 0px; padding: 0px; }
+  .sidePanelGalleryLinks { width: 185px; margin: 30px 0px; padding: 0px; font-size: 85%; }
   .sidePanelGalleryLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
   .sidePanelGalleryLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelGalleryLinks li a { color: #680211; text-decoration: none}
@@ -233,15 +233,35 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* Gallery page content                                                                                         */
 /* --------------------------------------------------------------------------------------------------------- */
 .contentGallery { .font-family: 'Yanone Kaffeesatz', Verdana; color: #000000; text-align: justify;}
+
 @media (min-width: 500px){
-.contentGallery { width: auto; margin-top: 25px; font-size: 14px;  }
+.contentGallery { width: auto; margin-top: 25px; font-size: 80%;  }
 }
 
 @media (max-width: 499px){
-.contentGallery { width: 90%; margin-top: 270px; font-size: 130%;  }
+.contentGallery { width: 90%; margin-top: 270px; font-size: 80%;  }
 }
 
 #galleryTable td { vertical-align: middle; text-align: justify; padding: 5px; }
+
+#redWineImg:hover { -moz-box-shadow: 0 0 30px #900; -webkit-box-shadow: 0 0 30px #900; box-shadow: 0 0 30px #900; }
+
+
+#processStep { float: left; width: 240px; height: 240px; }
+#processStep:hover #processStepText { opacity:0.7; }
+
+.processStep1 { background: url(../images/photoGallery/processing/processing-1.jpg) no-repeat; }
+.processStep2 { background: url(../images/photoGallery/processing/processing-2.jpg) no-repeat; }
+.processStep3 { background: url(../images/photoGallery/processing/processing-3.jpg) no-repeat; }
+.processStep4 { background: url(../images/photoGallery/processing/processing-4.jpg) no-repeat; }
+.processStep5 { background: url(../images/photoGallery/processing/processing-5.jpg) no-repeat; }
+.processStep6 { background: url(../images/photoGallery/processing/processing-6.jpg) no-repeat; }
+.processStep7 { background: url(../images/photoGallery/processing/processing-7.jpg) no-repeat; }
+.processStep8 { background: url(../images/photoGallery/processing/processing-8.jpg) no-repeat; }
+
+#processStepText { opacity:0; width:185px; height:185px; background:#FFF; text-align:justify; color:#000000; padding:20px; font-family: 'Philosopher', sans-serif; font-size: 60%; font-weight: bold; }
+#processStepTextAlwaysShow { width:185px; height:185px; text-align:justify; color:#000000; padding:20px; font-family: 'Philosopher', sans-serif; font-size: 60%; font-weight: bold; }
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Products page content                                                                                                              */
@@ -288,7 +308,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
 #formatSummaryPhilosopher { font-size: 20px; text-align: justify; font-family: 'Philosopher', sans-serif; }
-#formatSummaryPhilosopher14 { font-size: 14px; text-align: justify; font-family: 'Philosopher', sans-serif; }
+#formatSummaryPhilosopher13 { font-size: 13px; text-align: justify; font-family: 'Philosopher', sans-serif; }
 
 
 
