@@ -145,7 +145,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
   .sidePanelHistoryLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelHistoryLinks li a { color: #680211; text-decoration: none}
 
-  .sidePanelGalleryLinks { width: 185px; margin: 30px 0px; padding: 0px; font-size: 85%; }
+  .sidePanelGalleryLinks { width: 185px; margin: 30px 0px; padding: 0px; }
   .sidePanelGalleryLinks ul { margin: 0px 0px 0px 25px; padding: 0px; }
   .sidePanelGalleryLinks li { list-style: none; padding: 7px 7px; }
   .sidePanelGalleryLinks li a { color: #680211; text-decoration: none}
