@@ -212,8 +212,8 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* --------------------------------------------------------------------------------------------------------- */
 @media (min-width: 500px){
   .contentHistory { margin-top: 0px; }
-  .historyRow td { width:145px; height: 135px; padding: 5px }
-  .historyRowMed td { width:740px; height: 135px; padding: 5px }
+  .historyRow td { width:145px; height: 135px; padding: 0px }
+  .historyRowMed td { width:740px; padding: 0px }
 }
 
 @media (max-width: 499px){
