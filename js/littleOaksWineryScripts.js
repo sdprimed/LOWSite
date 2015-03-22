@@ -23,7 +23,7 @@ $(document).ready(
 				$(".galleryWhiteGrapes").show();
 				$(".galleryRedGrapes").hide();
 				$(".galleryProcessing").hide();
-				$(".galleryReleaseParty").hide();
+				$(".galleryWineProducts").hide();
 			});
 						
 			$(".photoGalleryRedGrapes").click(function()
@@ -31,7 +31,7 @@ $(document).ready(
 				$(".galleryWhiteGrapes").hide();
 				$(".galleryRedGrapes").show();
 				$(".galleryProcessing").hide();
-				$(".galleryReleaseParty").hide();
+				$(".galleryWineProducts").hide();
 			});
 						
 			$(".photoGalleryProcessing").click(function()
@@ -39,15 +39,15 @@ $(document).ready(
 				$(".galleryWhiteGrapes").hide();
 				$(".galleryRedGrapes").hide();
 				$(".galleryProcessing").show();
-				$(".galleryReleaseParty").hide();
+				$(".galleryWineProducts").hide();
 			});
 						
-			$(".photoGalleryReleaseParty").click(function()
+			$(".photoGalleryWineProducts").click(function()
 			{
 				$(".galleryWhiteGrapes").hide();
 				$(".galleryRedGrapes").hide();
 				$(".galleryProcessing").hide();
-				$(".galleryReleaseParty").show();
+				$(".galleryWineProducts").show();
 			});
 						
 			$(".redGrapesImg1").hover(function()

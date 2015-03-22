@@ -270,11 +270,21 @@ nav.footerMenu li a:hover { color: #3C2415; }
 @media (min-width: 500px){
 
   .contentProducts { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }
+  #productImg { width: 130px; margin: 0px 10px; float: left; }
+  #productDescription { width: 575px; margin: 0px 0px; float: left; text-align: justify; }
 }
 @media (max-width: 499px){
 
   .contentProducts { width: auto; margin-top: 235px; }
+  #productImg { width: auto; margin: 0px 10px; float: left; }
+  #productDescription { width: auto; margin: 0px 0px; float: left; text-align: justify; }
 }
+
+#productRow { clear: both; padding: 10px 0px; }
+#productImg { width: 130px; margin: 0px 10px; float: left; }
+#productDescription { width: 575px; margin: 0px 0px; float: left; text-align: justify; }
+	#productDescription h1 { margin: 10px 0px; text-align: left; font-weight: bold; }
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Wine Club page content                                                                                                              */
