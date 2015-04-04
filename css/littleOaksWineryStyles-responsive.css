@@ -242,7 +242,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 .contentGallery { width: 90%; margin-top: 270px; font-size: 80%;  }
 }
 
-#galleryTable td { vertical-align: middle; text-align: justify; padding: 5px; }
+#galleryTable td { vertical-align: middle; text-align: center; padding: 5px; }
 
 #redWineImg:hover { -moz-box-shadow: 0 0 30px #900; -webkit-box-shadow: 0 0 30px #900; box-shadow: 0 0 30px #900; }
 
