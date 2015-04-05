@@ -169,6 +169,11 @@ nav.footerMenu li a:hover { color: #3C2415; }
     padding: 7px 10px;
   }
   .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
+
+  .sidePanelImage {
+    margin-left: 10px;
+    padding: 10px ;
+  }
     
 } 
 
@@ -185,12 +190,15 @@ nav.footerMenu li a:hover { color: #3C2415; }
     width: 75%;
     margin: 3% 0%;
     padding: 7px;
+    font-size: 70%;
   }
+  
   .sidePanelNav li a { color: #E8CCCC; text-decoration: none; }
 
   .sidePanelHomeLinks { width: 100%; margin: 0px 0px; padding-left: 10px; }
   .sidePanelHistoryLinks { width: 90%; margin: 0px 0px; padding-left: 10px; }
   .sidePanelGalleryLinks { width: 100%; margin: 0px 0px; padding-left: 10px; } 
+  .sidePanelImage { width: 100%; margin: 0px 0px; padding-left: 10px;}
 } 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
@@ -283,7 +291,7 @@ nav.footerMenu li a:hover { color: #3C2415; }
 #productRow { clear: both; padding: 10px 0px; }
 #productImg { width: 130px; margin: 0px 10px; float: left; }
 #productDescription { width: 575px; margin: 0px 0px; float: left; text-align: justify; }
-	#productDescription h1 { margin: 10px 0px; text-align: left; font-weight: bold; }
+#productDescription h1 { margin: 10px 0px; text-align: left; font-weight: bold; }
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
