@@ -242,25 +242,9 @@ nav.footerMenu li a:hover { color: #3C2415; }
 .contentGallery { width: 90%; margin-top: 270px; font-size: 80%;  }
 }
 
-#galleryTable td { vertical-align: middle; text-align: center; padding: 5px; }
+.galleryTable td { vertical-align: middle; text-align: center; padding: 5px; }
 
-#redWineImg:hover { -moz-box-shadow: 0 0 30px #900; -webkit-box-shadow: 0 0 30px #900; box-shadow: 0 0 30px #900; }
-
-
-#processStep { float: left; width: 240px; height: 240px; }
-#processStep:hover #processStepText { opacity:0.7; }
-
-.processStep1 { background: url(../images/photoGallery/processing/processing-1.jpg) no-repeat; }
-.processStep2 { background: url(../images/photoGallery/processing/processing-2.jpg) no-repeat; }
-.processStep3 { background: url(../images/photoGallery/processing/processing-3.jpg) no-repeat; }
-.processStep4 { background: url(../images/photoGallery/processing/processing-4.jpg) no-repeat; }
-.processStep5 { background: url(../images/photoGallery/processing/processing-5.jpg) no-repeat; }
-.processStep6 { background: url(../images/photoGallery/processing/processing-6.jpg) no-repeat; }
-.processStep7 { background: url(../images/photoGallery/processing/processing-7.jpg) no-repeat; }
-.processStep8 { background: url(../images/photoGallery/processing/processing-8.jpg) no-repeat; }
-
-#processStepText { opacity:0; width:185px; height:185px; background:#FFF; text-align:justify; color:#000000; padding:20px; font-family: 'Philosopher', sans-serif; font-size: 60%; font-weight: bold; }
-#processStepTextAlwaysShow { width:185px; height:185px; text-align:justify; color:#000000; padding:20px; font-family: 'Philosopher', sans-serif; font-size: 60%; font-weight: bold; }
+.galleryImg:hover { -moz-box-shadow: 0 0 30px #900; -webkit-box-shadow: 0 0 30px #900; box-shadow: 0 0 30px #900; }
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
@@ -317,8 +301,8 @@ nav.footerMenu li a:hover { color: #3C2415; }
 /* Used as the default text within the page content section.
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-#formatSummaryPhilosopher { font-size: 20px; text-align: justify; font-family: 'Philosopher', sans-serif; }
-#formatSummaryPhilosopher13 { font-size: 13px; text-align: justify; font-family: 'Philosopher', sans-serif; }
+.formatSummaryPhilosopher { font-size: 20px; text-align: justify; font-family: 'Philosopher', sans-serif; }
+.formatSummaryPhilosopher13 { font-size: 13px; text-align: justify; font-family: 'Philosopher', sans-serif; }
 
 
 

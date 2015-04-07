@@ -18,243 +18,269 @@ $(document).ready(
 
 		//photo gallery scripts
 
-			$(".photoGalleryWhiteGrapes").click(function()
+			$("#photoGalleryWhiteGrapes").click(function()
 			{
-				$(".galleryWhiteGrapes").show();
-				$(".galleryRedGrapes").hide();
-				$(".galleryProcessing").hide();
-				$(".galleryWineProducts").hide();
+				$("#galleryWhiteGrapes").show();
+				$("#galleryRedGrapes").hide();
+				$("#galleryProcessing").hide();
+				$("#galleryWineProducts").hide();
 			});
 						
-			$(".photoGalleryRedGrapes").click(function()
+			$("#photoGalleryRedGrapes").click(function()
 			{
-				$(".galleryWhiteGrapes").hide();
-				$(".galleryRedGrapes").show();
-				$(".galleryProcessing").hide();
-				$(".galleryWineProducts").hide();
+				$("#galleryWhiteGrapes").hide();
+				$("#galleryRedGrapes").show();
+				$("#galleryProcessing").hide();
+				$("#galleryWineProducts").hide();
+
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".photoGalleryProcessing").click(function()
+			$("#photoGalleryProcessing").click(function()
 			{
-				$(".galleryWhiteGrapes").hide();
-				$(".galleryRedGrapes").hide();
-				$(".galleryProcessing").show();
-				$(".galleryWineProducts").hide();
+				$("#galleryWhiteGrapes").hide();
+				$("#galleryRedGrapes").hide();
+				$("#galleryProcessing").show();
+				$("#galleryWineProducts").hide();
+				
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").show();
 			});
 						
-			$(".photoGalleryWineProducts").click(function()
+			$("#photoGalleryWineProducts").click(function()
 			{
-				$(".galleryWhiteGrapes").hide();
-				$(".galleryRedGrapes").hide();
-				$(".galleryProcessing").hide();
-				$(".galleryWineProducts").show();
+				$("#galleryWhiteGrapes").hide();
+				$("#galleryRedGrapes").hide();
+				$("#galleryProcessing").hide();
+				$("#galleryWineProducts").show();
 			});
 						
-			$(".redGrapesMalbec").hover(function()
+			$("#redGrapesMalbec").hover(function()
 			{
-				$(".redGrapesImgMalbecText").show();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").hide();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").show();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").hide();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesSangiovese").hover(function()
+			$("#redGrapesSangiovese").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").show();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").hide();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").show();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").hide();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesOnVine").hover(function()
+			$("#redGrapesOnVine").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesHavingFun").hover(function()
+			$("#redGrapesHavingFun").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesGrapePicking").hover(function()
+			$("#redGrapesGrapePicking").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesInHand").hover(function()
+			$("#redGrapesInHand").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesBlackWidow").hover(function()
+			$("#redGrapesBlackWidow").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").show();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").show();
 			});
 						
-			$(".redGrapesBarbera").hover(function()
+			$("#redGrapesBarbera").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").show();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").hide();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").show();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").hide();
 			});
 						
-			$(".redGrapesMerlot").hover(function()
+			$("#redGrapesMerlot").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").show();
-				$(".redGrapesSyrahText").hide();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").hide();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").show();
+				$("#redGrapesSyrahText").hide();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").hide();
 			});
 						
-			$(".redGrapesSyrah").hover(function()
+			$("#redGrapesSyrah").hover(function()
 			{
-				$(".redGrapesImgMalbecText").hide();
-				$(".redGrapesSangioveseText").hide();
-				$(".redGrapesBarberaText").hide();
-				$(".redGrapesMerlotText").hide();
-				$(".redGrapesSyrahText").show();
-				$(".redGrapesGenericText").show();
-				$(".redGrapesBlackWidowText").hide();
+				$("#redGrapesImgMalbecText").hide();
+				$("#redGrapesSangioveseText").hide();
+				$("#redGrapesBarberaText").hide();
+				$("#redGrapesMerlotText").hide();
+				$("#redGrapesSyrahText").show();
+				$("#redGrapesGenericText").show();
+				$("#redGrapesBlackWidowText").hide();
 			});
 						
-			$(".processingImg1").hover(function()
+			$("#processingStep1").hover(function()
 			{
-				$(".processingImg1Text").show();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").show();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg2").hover(function()
+			$("#processingStep2").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").show();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").show();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg3").hover(function()
+			$("#processingStep3").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").show();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").show();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg4").hover(function()
+			$("#processingStep4").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").show();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").show();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg5").hover(function()
+			$("#processingStep5").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").show();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").show();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg6").hover(function()
+			$("#processingStep6").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").show();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").show();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg7").hover(function()
+			$("#processingStep7").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").show();
-				$(".processingImg8Text").hide();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").show();
+				$("#processingStep8Text").hide();
+				$("#processingStepDefaultText").hide();
 			});
 						
-			$(".processingImg8").hover(function()
+			$("#processingStep8").hover(function()
 			{
-				$(".processingImg1Text").hide();
-				$(".processingImg2Text").hide();
-				$(".processingImg3Text").hide();
-				$(".processingImg4Text").hide();
-				$(".processingImg5Text").hide();
-				$(".processingImg6Text").hide();
-				$(".processingImg7Text").hide();
-				$(".processingImg8Text").show();
+				$("#processingStep1Text").hide();
+				$("#processingStep2Text").hide();
+				$("#processingStep3Text").hide();
+				$("#processingStep4Text").hide();
+				$("#processingStep5Text").hide();
+				$("#processingStep6Text").hide();
+				$("#processingStep7Text").hide();
+				$("#processingStep8Text").show();
+				$("#processingStepDefaultText").hide();
 			});
 			
 	});
