@@ -18,7 +18,7 @@
 
 	</head>
 
-	<body id="master">
+	<body class="master">
   
 		<header>
 			<center><figure class="headerLogo"><img id="companyLogoImg" src="../images/logo.png" align="middle" width="auto" height="auto"></figure></center>
@@ -56,16 +56,16 @@
             <nav class="sidePanelNav">
                 <ul>
                     <li><a href="http://www.vineyard2door.com/79500" target="_self">Shop Now!</a></li> 
-                    <li><a href="http://www.vineyard2door.com/web/index.cfm?oid=79500&jump=2">Join Wine Club</a></li>
+                    <li><a href="http://www.vineyard2door.com/web/index.cfm?oclass=79500&jump=2">Join Wine Club</a></li>
                     <li><a href="http://eepurl.com/bhNuTj" target="_blank">Newsletter Signup</a>
                 </ul>
             </nav>
             
             <section class="sidePanelGalleryLinks">
             	<ul>
-   					<li class="photoGalleryWhiteGrapes"><a href="#">Viognier</a></li>
-   					<li class="photoGalleryRedGrapes"><a href="#">Red Grapes</a></li>
-   					<li class="photoGalleryProcessing"><a href="#">Processing</a></li>
+   					<li id="photoGalleryWhiteGrapes"><a href="#">Viognier</a></li>
+   					<li id="photoGalleryRedGrapes"><a href="#">Red Grapes</a></li>
+   					<li id="photoGalleryProcessing"><a href="#">Processing</a></li>
                 </ul>
             </section>
 
@@ -88,13 +88,14 @@
    	   	    --  Gallery Section.                                                                                                        --
    	   	    -----------------------------------------------------------------------------------------------------------------------------
    		    -->
-        	<section class="contentGallery" class="formatSummaryPhilosopher">
 
-				<section class="galleryWhiteGrapes">
-	            	<table id="galleryTable">
+        	<section id="contentGallery" class="formatSummaryPhilosopher">
+
+				<section id="galleryWhiteGrapes">
+	            	<table class="galleryTable">
     	            	<tr>
         	            	<td><img src="../images/photoGallery/whiteGrapes/whiteGrapes-VoignierSign.jpg"></td>
-            	        	<td height="170px" width="170px" class="formatSummaryPhilosopher13">
+            	        	<td width="170px" height="170px" class="formatSummaryPhilosopher13">
                             	Viognier is a white wine grape variety that has the potential to product full-bodied wines with a lush, soft character.
                             	<br><br>The Viognier varietal has more natural aromatics that include notes of peaches, pears, violets & minerality.
                         	</td>
@@ -109,230 +110,138 @@
             		</table>
 				</section>
 
-				<section class="galleryRedGrapes" style="display: none;">
-	            	<table id="galleryTable">
+				<section id="galleryRedGrapes" style="display: none;">
+	            	<table class="galleryTable">
                 		<tr>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesMalbec" src="../images/photoGallery/redGrapes/redGrapes-MalbecSign.jpg"></td>
-                    		<td id="redWineImg"><img class="redGrapesOnVine" src="../images/photoGallery/redGrapes/redGrapes-OnVine.jpg"></td>
-                    		<td rowspan="2" id="redWineImg"><img class="redGrapesInHand" src="../images/photoGallery/redGrapes/redGrapes-InHand.jpg"></td>
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesMalbec" src="../images/photoGallery/redGrapes/redGrapes-MalbecSign.jpg"></td>
+                    		<td class="galleryImg"><img id="redGrapesOnVine" src="../images/photoGallery/redGrapes/redGrapes-OnVine.jpg"></td>
+                    		<td rowspan="2" class="galleryImg"><img id="redGrapesInHand" src="../images/photoGallery/redGrapes/redGrapes-InHand.jpg"></td>
                 		</tr>
                         
                 		<tr>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesSangiovese" src="../images/photoGallery/redGrapes/redGrapes-SangioveseSign.jpg"></td>
+
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesSangiovese" src="../images/photoGallery/redGrapes/redGrapes-SangioveseSign.jpg"></td>
                     		<td width="170px" height="180px" class="formatSummaryPhilosopher13">
-                        		<section class="redGrapesImgMalbecText" style="display: none;">
+                        		<section id="redGrapesImgMalbecText" style="display: none;">
                             		The Malbec is a black-skinned grape with recent fame for wines coming out of Mendoza, Argentina. <br><br>Malbec is originally from Cahors, 
                                     France but with its multinational production, it has become a strong presence in California and a major part of the Meritage blend in the US. 
                                 </section>
-                        		<section class="redGrapesSangioveseText" style="display: none;">
+                        		<section id="redGrapesSangioveseText" style="display: none;">
                             		The Sangiovese grape is a dark-berried varietal and is the most commonly known varietal in many of the core Italian wines. 
                                     <br><br>In more recent years, Sangiovese has been used to create several high quality blends including Brunello di Montalcino, Chianti and the "Super Tuscans". 
                                 </section>
-                        		<section class="redGrapesGenericText" style="display: none;">
+                        		<section id="redGrapesGenericText">
                             		Our grapes are grown in and around San Diego, CA.
                                 </section>
                         	</td>
                 		</tr>
                         
                 		<tr>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesHavingFun" src="../images/photoGallery/redGrapes/redGrapes-HavingFun.jpg"></td>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesGrapePicking" src="../images/photoGallery/redGrapes/redGrapes-GrapePicking.jpg"></td>
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesHavingFun" src="../images/photoGallery/redGrapes/redGrapes-HavingFun.jpg"></td>
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesGrapePicking" src="../images/photoGallery/redGrapes/redGrapes-GrapePicking.jpg"></td>
                 		</tr>
                         
                 		<tr>
-                    		<td id="redWineImg"><img class="redGrapesBlackWidow" src="../images/photoGallery/redGrapes/redGrapes-BlackWidow.jpg"></td>
-                    		<td width="240px" height="240px" class="formatSummaryPhilosopher13">
-                        		<section class="redGrapesBlackWidowText">
+                    		<td class="galleryImg"><img id="redGrapesBlackWidow" src="../images/photoGallery/redGrapes/redGrapes-BlackWidow.jpg"></td>
+                    		<td width="175px" height="250px" class="formatSummaryPhilosopher13">
+                        		<section id="redGrapesBlackWidowText">
                             		Look carefully... You never know what you'll find lurking amongst the grapes!
                                 </section>
-                        		<section class="redGrapesBarberaText" style="display: none;">
+                        		<section id="redGrapesBarberaText" style="display: none;">
                             		The Barbera grape is an Italian varietal featuring dark-skinned grapes and tends to be naturally high in acidity. <br><br>Due to its high acidity, 
                                     Barbera can be grown in warmer climates such as Sonoma Valley and the Sierra Nevada foothills in California.
                                 </section>
-                        		<section class="redGrapesMerlotText" style="display: none;">
+                        		<section id="redGrapesMerlotText" style="display: none;">
                             		The Merlot grape rivals the Cabernet Sauvignon in terms of popularity and international production. <br><br>Its popularity is derived from the 
                                     Merlot grapes ability to soften varieties in which high tannins are found and create "easy drinking" wines. 
                                 </section>
-                        		<section class="redGrapesSyrahText" style="display: none;">
+                        		<section id="redGrapesSyrahText" style="display: none;">
                             		The Syrah grape is a dark-skinned grape and is also known as Shiraz in Australia. The wines typically have a deep color and are capable of improving over many years of aging. 
                                     <br><br>In the Southern Rhone region, Syrah is commonly blended with Grenache and Mourvedre to create the rising varietal, the GSM (Grenache, Syrah, Mourvedre) blend. 
                                 </section>
                         	</td>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesBarbera" src="../images/photoGallery/redGrapes/redGrapes-Barbera.jpg"></td>
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesBarbera" src="../images/photoGallery/redGrapes/redGrapes-Barbera.jpg"></td>
                 		</tr>
                         
                 		<tr>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesSyrah" src="../images/photoGallery/redGrapes/redGrapes-Syrah.jpg"></td>
-                    		<td colspan="2" id="redWineImg"><img class="redGrapesMerlot" src="../images/photoGallery/redGrapes/redGrapes-Merlot.jpg"></td>
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesSyrah" src="../images/photoGallery/redGrapes/redGrapes-Syrah.jpg"></td>
+                    		<td colspan="2" class="galleryImg"><img id="redGrapesMerlot" src="../images/photoGallery/redGrapes/redGrapes-Merlot.jpg"></td>
                 		</tr>
             		</table>
 				</section>
 
-				<section class="galleryProcessing" style="display: none;">
-                
-					<div id="processStep" class="processStep1">
-                    	<div id="processStepText">
-							Step 1...<br><br>
-							After a long day of picking grapes at the local vineyards, the grapes are brought to our facility.
-						</div>
-					</div>                
-                
-					<div id="processStep" class="processStep2">
-                    	<div id="processStepText">
-							Step 2...<br><br>
-							When they come in from the vineyard, the grapes are still attached to the stems.
-						</div>
-					</div>                
-                
-					<div id="processStep" class="processStep3">
-                    	<div id="processStepText">
-							Step 3...<br><br>
-							They are carefully gathered to be placed in the crusher / de-stemmer.
-						</div>
-					</div>
-                
-					<div id="processStep" class="processStep8">
-                    	<div id="processStepText">
-							Step 8...<br><br>
-							Secondary fermentation, also known as Malolactic fermentation, occurs after primary fermentation and is useful for creating wines that have a smooth, 
-							buttery texture. <p>After secondary fermentation, the wine is poured into oak barrels or other tanks for several months of barrel aging.
-						</div>
-					</div>                
-                
-					<div id="processStep">
-                    	<div id="processStepTextAlwaysShow">
-							<br><br><br>Throughout the aging process, the wine will be monitored for sulfite levels, pH and several other parameters to maximize color, flavor and smell.
-						</div>
-					</div>                
-                
-					<div id="processStep" class="processStep4">
-                    	<div id="processStepText">
-							Step 4...<br><br>
-							The crusher / de-stemmer machine first crushes the grapes and then spins the clusters to remove the stem.  <p>The stems spit out of the machine and the newly 
-							crushed grapes fall down the slide into the fermentation bins.
-						</div>
-					</div>
-                
-					<div id="processStep" class="processStep7">
-                    	<div id="processStepText">
-							Step 7...<br><br>
-							After cold soaking, the grapes will begin primary fermentation where they will be closely monitored to determine when fermentation has completed. Primary 
-							fermentation, with the help of specially designed yeast strains, converts the sugars in the grapes to alcohol.
-                            <p>After fermentation, the grapes are pressed to extract the juice and leave behind the skins.<p>
-						</div>
-					</div>                
-                
-					<div id="processStep" class="processStep6">
-                    	<div id="processStepText">
-							Step 6...<br><br>
-							At the time of crushing, the winemaker will decide if the must should be cold soaked before primary fermentation using dry ice pellets. <p>This aids in the 
-							extraction of color, or tanins, from the grapes giving the wine a rich, dark color.
-						</div>
-					</div>                
-                
-					<div id="processStep" class="processStep5">
-                    	<div id="processStepText">
-							Step 5:<br><br>
-							The newly crushed grapes, or grape must, gets a good once-over to remove any remaining stems, leaves or other organic material that we do not want fermenting 
-							with our grapes.
-						</div>
-					</div>
+				<section id="galleryProcessing" style="display: none;">
+	            	<table class="galleryTable">
+                		<tr class="formatSummaryPhilosopher13">
+                    		<td class="galleryImg"><img id="processingStep1" src="../images/photoGallery/processing/processing-1.jpg"></td>
+                    		<td class="galleryImg"><img id="processingStep2" src="../images/photoGallery/processing/processing-2.jpg"></td>
+                    		<td class="galleryImg"><img id="processingStep3" src="../images/photoGallery/processing/processing-3.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td class="galleryImg"><img id="processingStep8" src="../images/photoGallery/processing/processing-8.jpg"></td>
+                    		<td  width="225px" height="225px" class="formatSummaryPhilosopher13">
+                        		<section id="processingStep1Text" style="display: none;">
+									Step 1...<br><br>
+									After a long day of picking grapes at the local vineyards, the grapes are brought to our facility.
+                                </section>
+                                
+                        		<section id="processingStep2Text" style="display: none;">
+									Step 2...<br><br>
+									When they come in from the vineyard, the grapes are still attached to the stems.
+                                </section>
+                                
+                        		<section id="processingStep3Text" style="display: none;">
+									Step 3...<br><br>
+									They are carefully gathered to be placed in the crusher / de-stemmer.
+                                </section>
 
-				</section>
+                        		<section id="processingStep4Text" style="display: none;">
+									Step 4...<br><br>
+									The crusher / de-stemmer machine first crushes the grapes and then spins the clusters to remove the stem.  <p>The stems spit out of the machine and the newly 
+									crushed grapes fall down the slide into the fermentation bins.
+                                </section>
 
-				<section class="galleryWineProducts" style="display: none;">
-					<h1 class="formatSummaryPhilosopher">Grape Varietals In Our Red Wines</h1>
+                        		<section id="processingStep5Text" style="display: none;">
+									Step 5:<br><br>
+									The newly crushed grapes, or grape must, gets a good once-over to remove any remaining stems, leaves or other organic material that we do not want fermenting 
+									with our grapes.
+                                </section>
 
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmBarbera.jpg">
-                    	</figure>
+                        		<section id="processingStep6Text" style="display: none;">
+									Step 6...<br><br>
+									At the time of crushing, the winemaker will decide if the must should be cold soaked before primary fermentation using dry ice pellets. <p>This aids in the 
+									extraction of color, or tanins, from the grapes giving the wine a rich, dark color.
+                                </section>
 
-                    	<section class="productDescription">
-							<h1 class="formatSummaryPhilosopher">Barbera</h1>
-                            
-                            <p>	The Barbera grape is an Italian varietal featuring dark-skinned grapes and tends to be naturally high in acidity. Due to its high acidity, Barbera can be grown in warmer climates 
-                            such as Sonoma Valley and the Sierra Nevada foothills in California. </p>
-                    	</section>
-					</section>
+                        		<section id="processingStep7Text" style="display: none;">
+									Step 7...<br><br>
+									After cold soaking, the grapes will begin primary fermentation where they will be closely monitored to determine when fermentation has completed. Primary 
+									fermentation, with the help of specially designed yeast strains, converts the sugars in the grapes to alcohol.
+            	            	    <p>After fermentation, the grapes are pressed to extract the juice and leave behind the skins.<p>
+                                </section>
 
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmMalbec.jpg">
-                    	</figure>
+                        		<section id="processingStep8Text" style="display: none;">
+									Step 8...<br><br>
+									Secondary fermentation, also known as Malolactic fermentation, occurs after primary fermentation and is useful for creating wines that have a smooth, 
+									buttery texture. <p>After secondary fermentation, the wine is poured into oak barrels or other tanks for several months of barrel aging.
+                                </section>
 
-                    	<section class="productDescription">
-							<h1 class="formatSummaryPhilosopher">Malbec</h1>
-                            
-                            <p>	The Malbec is a black-skinned grape with recent fame for wines coming out of Mendoza, Argentina. Malbec is originally from Cahors, France but with its multinational production, it has 
-                            become a strong presence in California and a major part of the Meritage blend in the United States. </p>
-                    	</section>
-					</section>
+                        		<section id="processingStepDefaultText">
+									Throughout the aging process, the wine will be monitored for sulfite levels, pH and several other parameters to maximize color, flavor and smell.
+                                </section>
 
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmSangiovese.jpg">
-                    	</figure>
-
-                    	<section class="productDescription">
-							<h1 class="formatSummaryPhilosopher">Sangiovese</h1>
-                            
-                            <p>	The Sangiovese grape is a dark-berried varietal and is the most commonly known varietal in many of the core Italian wines. In more recent years, Sangiovese has been used to create 
-                            several high quality blends including Brunello di Montalcino, Chianti and the "Super Tuscans". </p>
-                    	</section>
-					</section>
-
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmCabernet.jpg">
-                    	</figure>
-
-                    	<section clas="productDescription">
-							<h1 class="formatSummaryPhilosopher">Cabernet Sauvignon</h1>
-                            
-                            <p>	As the most famous and wide-spread red wine grape variety on Earth, Cabernet Sauvignon vines are highly adaptable to different climates and soil types yet the grapes always have a 
-                            	deep color and moderate acidity. Some of the finest examples of Cabernet Sauvignon can be found in Bordeaux (France) and California. </p>
-                    	</section>
-					</section>
-
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmMerlot.jpg">
-                    	</figure>
-
-                    	<section class="productDescription">
-							<h1 class="formatSummaryPhilosopher">Merlot</h1>
-                            
-                            <p>	The Merlot grape rivals the Cabernet Sauvignon in terms of popularity and international production. However, its popularity is derived from the Merlot grapes’ ability to soften 
-                            	varieties in which high tannins are found and create "easy drinking" wines. </p>
-                    	</section>
-					</section>
-
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmSyrah.jpg">
-                    	</figure>
-
-                    	<section class="productDescription">
-							<h1 class="formatSummaryPhilosopher">Syrah</h1>
-                            
-                            <p>	The Syrah grape is a dark-skinned grape and is also known as Shiraz in Australia. The wines typically have a deep color and are capable of improving over many years of aging. In the 
-                            	Southern Rhone region, Syrah is commonly blended with Grenache and Mourvedre to create the rising varietal, the GSM (Grenache, Syrah, Mourvedre) blend. </p>
-                    	</section>
-					</section>
-
-					<section class="productRow">
-                    	<figure class="productImg">
-							<img src="../images/wineLabels/wineLabelSmCarignane.jpg">
-                    	</figure>
-
-                    	<section class="productDescription">
-							<h1 class="formatSummaryPhilosopher">Carignane</h1>
-                            
-                            <p>	The Carignan (or Carignane in California) grape is a black skinned wine grape native to northern Spain. Rarely made as a varietal wine, Carignane is commonly blended to give wines more 
-                            	body and depth of color. </p>
-                    	</section>
-					</section>
+                            </td>
+                    		<td class="galleryImg"><img id="processingStep4" src="../images/photoGallery/processing/processing-4.jpg"></td>
+                		</tr>
+                        
+                		<tr>
+                    		<td class="galleryImg"><img id="processingStep7" src="../images/photoGallery/processing/processing-7.jpg"></td>
+                    		<td class="galleryImg"><img id="processingStep6" src="../images/photoGallery/processing/processing-6.jpg"></td>
+                    		<td class="galleryImg"><img id="processingStep5" src="../images/photoGallery/processing/processing-5.jpg"></td>
+                		</tr>
+                    
+            		</table>
 
 				</section>
                 
@@ -346,20 +255,20 @@
         --  Footer Section.                                                                                                        --
 		-----------------------------------------------------------------------------------------------------------------------------
 		-->
-    
-        <footer>
-            <hr>
-            <p>Copyright<sup>&#169;</sup> 2015 Little Oaks Winery.  All Rights Reserved.  Designed by Harbor View Solutions / xtremeBrit Designs</p>
+		<footer>
+			<hr>
+        	<p>Copyright<sup>&#169;</sup> 2015 Little Oaks Winery.  All Rights Reserved.  Designed by Harbor View Solutions / xtremeBrit Designs</p>
       
-            <nav class="footerMenu">
-                <ul>
-                    <li><a href="PrivacyPolicy-dev.html" target="_self">Privacy Policy</a></li>
-                    <li><img id="dividerBarImg" src="../images/dividerBar.png"></li>
-                    <li><a href="Terms-dev.html" target="_self">Terms and Conditions</a></li>
-                </ul>
-            </nav>
+			<nav class="footerMenu">
+				<ul>
+					<li><a href="PrivacyPolicy-dev.html" target="_self">Privacy Policy</a></li>
+					<li><img id="dividerBarImg" src="../images/dividerBar.png"></li>
+					<li><a href="Terms-dev.html" target="_self">Terms and Conditions</a></li>
+				</ul>
+			</nav>
+		</footer>
 
-        </footer>
+
   
   </body>
 
