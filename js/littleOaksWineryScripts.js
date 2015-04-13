@@ -259,4 +259,36 @@ $(document).ready(
 			
 	});
 
+$(window).ready(function(){
+	// width() returns value in pixels
+	var ws = $(window).width();
+
+	if(ws < 500) 
+	{
+		$("#sidePanelImage").hide();
+		$("#totcImg").show();
+
+	}
+	else
+	{
+		$("#sidePanelImage").show();
+		$("#totcImg").hide();
+	}
+
+	$(window).resize(function(){
+		ws = $(window).width();
+			if(ws < 500) 
+			{
+				$("#sidePanelImage").hide();
+				$("#totcImg").show();
+			}
+			else 
+			{
+				$("#sidePanelImage").show();
+				$("#totcImg").hide();
+			}
+
+	});
+})
+
 
