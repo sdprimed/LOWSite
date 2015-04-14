@@ -269,8 +269,6 @@ nav.footerMenu li a:hover { color: #3C2415; }
   text-align: center;
 }
 
-.formatSummaryPhilosopherCenter h2 {margin-bottom: 10px;}
-
 .productDescription { 
     border-bottom: dotted;
     border-color: #B96666;
@@ -279,12 +277,26 @@ nav.footerMenu li a:hover { color: #3C2415; }
     margin: 0px 0px;
 }
 
+#productDescriptionLast { 
+    text-align: justify;
+    float: left;
+    margin: 0px 0px;
+}
+
+.productRow { 
+    clear: both; 
+    padding-right: 10px; 
+    margin-top: -30px;
+}
+
+.productSubtitle {color: #680211; font-family: 'Philosopher', sans-serif; font-size: 110%; font-weight: bold; font-style: italic;}
+
 @media (min-width: 500px){
 
   #contentProducts { width: 740px; height: auto; margin-top: 40px; padding: 0px -50px 0px 5px; }
   .productImg { width: 130px; margin: 50px 10px; float: left; }
   .productDescription { width: 575px; }
-  #productDescriptionLast { width: 575px; }
+  #productDescriptionLast { width: 575px;}
 }
 
 @media (max-width: 499px){
@@ -292,21 +304,10 @@ nav.footerMenu li a:hover { color: #3C2415; }
   #contentProducts { width: auto; margin-top: 240px; }
   .productImg { width: auto; margin-top: 30px; margin-bottom: 0px; margin-left:10px; float: left; }
   .productDescription h1 {margin-bottom: 20px; }
-  .productDescription { width: auto; margin: 0px 0px; }
-  #productDescriptionLast { width: auto; margin: 0px 0px; }
-  .productRow { clear: both; margin-right: 30px; }
+  .productDescription { width: auto; }
+  #productDescriptionLast { width: auto; }
+  .productRow { margin-right: 30px; }
 }
-
-.productRow { 
-    clear: both; 
-    padding-right: 10px; 
-}
-
-/*.productImg { width: 130px; margin: 20px 10px; float: left; } */
-.productSubtitle {color: #680211; font-family: 'Philosopher', sans-serif; font-size: 110%; font-weight: bold; font-style: italic;}
-/*.productDescription { width: 575px; margin: 0px 0px; float: left; text-align: justify; }
-.productDescription h1 { margin: 10px 0px; text-align: left; font-weight: bold; }*/
-
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /* Wine Club page content                                                                                                              */
